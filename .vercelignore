@@ -1,0 +1,28 @@
+# Abaikan environment virtual
+venv/
+.env
+
+# Cache dan hasil compile
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.mypy_cache/
+
+# File besar dan tidak perlu
+*.pdf
+*.csv
+*.db
+*.sqlite3
+*.log
+
+# Folder Git
+.git/
+.gitignore
+
+# Folder atau file dari editor
+.vscode/
+.idea/
+
+# Lainnya
+node_modules/
