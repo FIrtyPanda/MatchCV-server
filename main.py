@@ -28,7 +28,7 @@ app.add_middleware(
 app.add_middleware(SessionMiddleware, secret_key="SUPERSECRET")
 
 # === Router ===
-app.include_router(auth.router, prefix="/auth", tags=["Auth"])
-app.include_router(upload.router, prefix="/cv", tags=["CV Upload"])
+app.include_router(auth.router, prefix="/api/auth", tags=["Auth"])
+app.include_router(upload.router, prefix="/api/cv", tags=["CV Upload"])
 
 Base.metadata.create_all(bind=engine)
